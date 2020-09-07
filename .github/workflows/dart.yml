@@ -19,4 +19,6 @@ jobs:
     - name: Install dependencies
       run: pub get
     - name: Get repo stars stats
+      run: dart repo-stars.dart -n 10
+    - name: Get repo stats stats with content
       run: dart repo-stars.dart --include-content-repos -n 10
